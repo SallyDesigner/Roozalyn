@@ -1,0 +1,241 @@
+@charset "utf8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .4s;
+    font-family: myfont;
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+}
+
+:root {
+    --main: #fdf8f1;
+    --sub: #af1858;
+    --subb: #fa84b5;
+    --w: #fff;
+    --b: #000;
+    --shd: #00000088;
+    --shh: #fef1df99;
+    --val: 8px;
+}
+
+html {
+    direction: rtl;
+    scroll-behavior: smooth;
+    font-size: small;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(./font/Marhey-VariableFont_wght.ttf);
+}
+
+.f-cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.f-bet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-ard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.f-evn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.m0-5 {
+    margin-top: 0.5em;
+}
+
+.m-1 {
+    margin-top: 1em;
+}
+
+.p0-5 {
+    padding: 0.5em;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.p1-5 {
+    padding: 01.5em;
+}
+
+.p2 {
+    padding: 2em;
+}
+
+.p2-5 {
+    padding: 2.5em;
+}
+
+.p3 {
+    padding: 3em;
+}
+
+.p4 {
+    padding: 4em;
+}
+
+.p5 {
+    padding: 5em;
+}
+
+.g0-5 {
+    gap: 0.5em;
+}
+
+.g1 {
+    gap: 1em;
+}
+
+.g1-5 {
+    gap: 01.5em;
+}
+
+.g2 {
+    gap: 2em;
+}
+
+.g2-5 {
+    gap: 2.5em;
+}
+
+.g3 {
+    gap: 3em;
+}
+
+.g4 {
+    gap: 4em;
+}
+
+.r0-5 {
+    border-radius: 0.5em;
+}
+
+.r1 {
+    border-radius: 1em;
+}
+
+.r1-5 {
+    border-radius: 01.5em;
+}
+
+.r2 {
+    border-radius: 2em;
+}
+
+.r2-5 {
+    border-radius: 2.5em;
+}
+
+.r3 {
+    border-radius: 3em;
+}
+
+.r4 {
+    border-radius: 4em;
+}
+
+.r50 {
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 25px;
+}
+
+.txt--main {
+    color: var(--main);
+}
+
+.txt--sub {
+    color: var(--sub);
+}
+
+.txt--w {
+    color: var(--w);
+}
+
+.txt--b {
+    color: var(--b);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-sub {
+    background-color: var(--sub);
+}
+
+.bg-w {
+    background-color: var(--w);
+}
+
+.bg-b {
+    background-color: var(--b);
+}
+
+.btn {
+    min-width: 110px;
+    padding: 5px 10px;
+    margin-top: 3px;
+    font-size: 14px;
+    background-color: var(--main);
+    color: var(--sub);
+    border: 1px solid var(--sub);
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border-radius: 12px;
+    transition: .4s;
+    width: 30%;
+    position: relative;
+    bottom: 20px;
+}
+
+.btn:hover {
+    background-color: var(--sub);
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.pos {
+    background-position: center;
+    background-size: cover;
+}

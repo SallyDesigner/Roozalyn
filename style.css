@@ -1,0 +1,338 @@
+@media(max-width: 1025px) {
+    header {
+        width: 100%;
+        padding: 9px 35px;
+        background-color: var(--shh);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        box-shadow: 0 0 1px var(--shd);
+    }
+
+    header h1 {
+        color: #f1f1f1;
+        text-align: center;
+        letter-spacing: 1;
+    }
+
+    header h1 {
+        color: var(--sub);
+    }
+
+
+    header img {
+        width: 60px;
+        border-radius: 16px;
+    }
+
+
+    header nav li a {
+        text-decoration: none;
+        color: var(--sub);
+        padding: 7px;
+        margin: 7px;
+        font-size: 17px;
+        z-index: 1;
+        filter: drop-shadow(1px 1px 1px var(--sub));
+    }
+
+    header nav a i {
+        z-index: 99;
+    }
+
+    header:hover {
+        box-shadow: 0 0 10px var(--shd);
+    }
+
+    header nav a:hover {
+        background-color: var(--sub);
+        color: var(--main);
+        border-radius: 50px;
+        box-shadow: 0 0 10px var(--sub);
+    }
+
+
+    .img {
+        background-image: url(img/bac1.jpeg);
+        background-position: center;
+        background-size: cover;
+        width: 55%;
+        height: 75vh;
+        border-radius: 100px;
+        box-shadow: inset 5px 5px 20px #fff;
+        margin-top: 60px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 3px 3px;
+        text-align: center;
+    }
+
+    header nav ul.dropdown li {
+        display: block;
+
+    }
+
+    header nav ul.dropdown {
+        width: auto;
+        background-color: var(--shh);
+        position: absolute;
+        z-index: 999;
+        margin: 0.2px 12px;
+        display: none;
+    }
+
+    header nav li:hover ul.dropdown {
+        display: block;
+    }
+
+    .btn-sider {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+
+    .btn-sider::before {
+        content: '';
+        position: absolute;
+        width: 34px;
+        height: 4px;
+        background-color: var(--sub);
+        border-radius: 3px;
+        top: 8px;
+        left: 3px;
+        transition: ease-out 0.3s;
+
+    }
+
+    .btn-sider.clicked::before {
+        top: 18px;
+        transform: rotate(225deg);
+    }
+
+    .btn-sider.clicked::after {
+        top: 18px;
+        transform: rotate(-225deg);
+    }
+
+    .btn-sider::after {
+        content: '';
+        position: absolute;
+        width: 34px;
+        height: 4px;
+        background-color: var(--sub);
+        border-radius: 3px;
+        bottom: 8px;
+        left: 3px;
+        transition: ease-out 0.3s;
+
+    }
+
+    aside {
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+        background-color: var(--main);
+        position: fixed;
+        top: 0;
+        left: -250px;
+        z-index: 1000;
+        box-shadow: 0 0 9px var(--shd);
+        padding: 25px;
+        border-right: 1px solid var(--w);
+    }
+
+    aside.show {
+        left: 0;
+    }
+
+    aside img {
+        width: 100%;
+        border-radius: 25px;
+        /* border: 1px solid var(--sub); */
+        box-shadow: 0 0 20px var(--subb);
+    }
+
+    aside h1 {
+        color: var(--sub);
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 12px 0;
+    }
+
+    aside nav a {
+        display: block;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--sub);
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    aside nav ul li {
+        list-style: none;
+    }
+
+    aside nav a:hover {
+        letter-spacing: 0;
+        background-color: var(--subb);
+        color: var(--main);
+        border-radius: 30px;
+        box-shadow: 0 0 10px var(--subb);
+    }
+
+    .container .img {
+        width: 400px;
+        height: 300px;
+    
+    }
+
+    footer .footer .icon .ic a li i:hover{
+        box-shadow: 0 0 10px var(--w);
+    }
+
+}
+
+@media(min-width: 1025px) {
+    header {
+        width: 100%;
+        padding: 9px 35px;
+        background-color: var(--shh);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        box-shadow: 0 0 1px var(--shd);
+    }
+
+    header h1 {
+        color: #f1f1f1;
+        text-align: center;
+        letter-spacing: 1;
+    }
+
+    header h1 {
+        color: var(--sub);
+    }
+
+
+    header img {
+        width: 60px;
+        border-radius: 16px;
+    }
+
+
+    header nav li a {
+        text-decoration: none;
+        color: var(--sub);
+        padding: 7px;
+        margin: 7px;
+        font-size: 17px;
+        z-index: 1;
+        filter: drop-shadow(1px 1px 1px var(--sub));
+    }
+
+    header nav a i {
+        z-index: 99;
+    }
+
+    header:hover {
+        box-shadow: 0 0 10px var(--shd);
+    }
+
+    header nav a:hover {
+        background-color: var(--sub);
+        color: var(--main);
+        border-radius: 50px;
+        box-shadow: 0 0 10px var(--sub);
+    }
+
+
+    .img {
+        background-image: url(img/bac1.jpeg);
+        background-position: center;
+        background-size: cover;
+        width: 55%;
+        height: 75vh;
+        border-radius: 100px;
+        box-shadow: inset 5px 5px 20px #fff;
+        margin-top: 60px;
+    }
+
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 3px 3px;
+        text-align: center;
+    }
+
+    header nav ul.dropdown li {
+        display: block;
+
+    }
+
+    header nav ul.dropdown {
+        width: auto;
+        background-color: var(--shh);
+        position: absolute;
+        z-index: 999;
+        margin: 0.2px 12px;
+        display: none;
+    }
+
+    header nav li:hover ul.dropdown {
+        display: block;
+    }
+
+    .btn-sider {
+        display: none;
+    }
+
+    .btn-sider,
+    aside {
+        display: none;
+    }
+
+    .container .img {
+        width: 700px;
+        height: 450px;
+    }
+
+    footer .footer .icon .ic a li i:hover{
+        transform: rotate(360deg);
+    }
+
+}
